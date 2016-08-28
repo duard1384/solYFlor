@@ -1,0 +1,162 @@
+html, body, nav, header, footer{
+    width: 100%;
+}
+body{
+   font-family: 'Merriweather', serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: grey;       
+    padding: 5px; 
+}
+.condiciones a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 1.1em;
+}
+.logo{
+    margin: auto;
+    background-image: url(../image/SolYFlor.png);
+    background-size: cover;
+    width: 160px;
+    height: 100px;    
+    margin-top: -40px;
+}
+
+.portada{
+    background-image: url(../image/Logo_SolYFlor.png);
+    background-size: cover;
+    width: 100%;
+    display: inline-block;
+    height: 500px;
+    margin-top: 10px;
+}
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.8em;
+}
+.menu{
+    text-transform: uppercase;
+}
+.menu ol{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    display: inline-block;
+    font-size: 1.8em;
+    }
+.menu li a{
+    text-decoration: none;
+    color: gray;
+}    
+.fondo{
+    background-image: url(../image/girasol.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    width: 1000px;
+    margin: auto;
+}
+.imageAside{
+    width: 100%;
+    height: 350px;
+}
+.backgroundMedio{
+    background-image: url(../image/Logo_SolYFlor.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: inline-block;
+}
+.textMedio{
+    flex-basis: auto;
+    font-size: 2.5em;
+    text-align: center;
+    color: cornflowerblue;
+}
+.table{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.item{
+    align-items: stretch;
+    border: 1px solid gray;
+    padding: 5px;
+    
+}
+.imageItem{
+    width: 200px;
+    height: 250px;
+}
+.titulo2{
+   
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.titulo2 h2{
+    margin-left: 5px;
+    letter-spacing: 9px;
+        }
+.articulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article div{
+    
+    padding: 20px;
+   }
+.textArticulo{
+    justify-content: center;
+}
+.articulo2 p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.articuloEvento{
+    display: flex;
+    
+}
+.articuloEvento .imageItem2{
+justify-content: space-between;
+}
+.imageItem2 :hover{
+background-image: url(../image/Logo_SolYFlor.png);
+width: 100%;
+}
+#efectoEvento{
+}
+.imageItem2 img{
+    width:100%;
+    height: 320px;
+}
+
+ img.imageHover:hover{
+}
+.articuloEvento .imageItem2 :hover{
+}
+.imageHover{
+}
