@@ -1,37 +1,46 @@
-html, body, nav, header, footer{
+html,
+body,
+nav,
+header,
+footer {
     width: 100%;
 }
-body{
-   font-family: 'Merriweather', serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     width: 100%;
 }
-footer{
+
+footer {
     margin-top: 20px;
     width: 100%;
     height: 60px;
-    background-color: grey;      
+    background-color: grey;
 }
-.condiciones a{
+
+.condiciones a {
     text-decoration: none;
     margin-left: 10px;
     font-size: 0.9em;
 }
-footer .copyright{
+
+footer .copyright {
     text-align: center;
     font-size: 1.1em;
 }
-.logo{
+
+.logo {
     margin: auto;
     background-image: url(../image/SolYFlorEditado.png);
     background-repeat: no-repeat;
-     width: 500px;
-    height: 150px;    
+    width: 500px;
+    height: 150px;
 }
 
-.portada{
+.portada {
     background-image: url(../image/bodas.jpg);
     background-size: cover;
     width: 100%;
@@ -39,53 +48,64 @@ footer .copyright{
     height: 600px;
     margin-top: 10px;
 }
-.portada p{
+
+.portada p {
     margin-top: 200px;
     margin-left: 150px;
     font-size: 5.0em;
     color: white;
     text-shadow: 3px 3px 8px grey;
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: space-between;
     text-align: center;
     font-size: 1.5em;
 }
-.menu{
+
+.menu {
     text-transform: uppercase;
 }
-.menu ol{
+
+.menu ol {
     display: flex;
     justify-content: space-around;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     font-size: 1.8em;
-    }
-.menu li a{
+}
+
+.menu li a {
     text-decoration: none;
     color: gray;
-}    
-.fondo{
+}
+
+.fondo {
     background-image: url(../image/.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-.contenedor{
+
+.contenedor {
     width: 1000px;
     margin: auto;
     font-size: 1.3em;
 }
-.contenedor div img{
-    margin: auto ;
+
+.contenedor div img {
+    margin: auto;
 }
-.imageAside{
+
+.imageAside {
     width: 100%;
     height: 350px;
 }
-.backgroundMedio{
+
+.backgroundMedio {
     background-image: url(../image/Logo_SolYFlor.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -94,70 +114,80 @@ footer .copyright{
     background-size: cover;
     display: inline-block;
 }
-.textMedio{
+
+.textMedio {
     flex-basis: auto;
     font-size: 2.5em;
     text-align: center;
     color: cornflowerblue;
 }
-.table{
+
+.table {
     display: flex;
     justify-content: space-around;
     margin: 10px;
 }
-.item{
+
+.item {
     align-items: stretch;
     padding: 5px;
-    
 }
-.imageItem{
+
+.imageItem {
     width: 300px;
     height: 250px;
 }
-.titulo2{
-   
+
+.titulo2 {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    
 }
-.titulo2 h2{
+
+.titulo2 h2 {
     margin-left: 5px;
     letter-spacing: 9px;
-        }
-.articulo{
+}
+
+.articulo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.textArticulo{
+
+.textArticulo {
     justify-content: center;
 }
-.articuloEvento div{
+
+.articuloEvento div {
     padding: 5px;
-   }
-.articuloEvento{
+}
+
+.articuloEvento {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
     margin-bottom: 60px;
 }
-.imageItem2{
-     height: 350px;
-     
-     }
-.titulo3{
+
+.imageItem2 {
+    height: 350px;
+}
+
+.titulo3 {
     display: none;
 }
-.imageItem2:hover img{
+
+.imageItem2:hover img {
     transition: 1.2s;
     transform: scale(1.02);
     opacity: 0.85;
 }
-.imageItem2:hover .titulo3{
+
+.imageItem2:hover .titulo3 {
     margin-top: -250px;
     display: block;
-     transition: 3s;
-     opacity: 0.5;
+    transition: 3s;
+    opacity: 0.5;
 }
