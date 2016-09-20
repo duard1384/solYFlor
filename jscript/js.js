@@ -40,8 +40,10 @@ function changeImg(namePag) {
 }
 
 function changePathName() {
-    url = location.pathname;
-    namePage = url.substring(1, (url.length - 5));
+    url =location.pathname;
+
+    namePage = url.substring((url.lastIndexOf('/') + 1), (url.length - 5));
+    alert(namePage);
     changeImg(namePage);
 }
 
