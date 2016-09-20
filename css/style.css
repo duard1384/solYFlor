@@ -96,11 +96,13 @@ footer {
     border-top: 2px solid #FF9500;
     font-family: 'Kaushan Script', cursive;
 }
-h1, h2{
+
+h1,
+h2 {
     color: #FE7174;
     font-family: 'Kaushan Script', cursive;
-
 }
+
 .condiciones a {
     color: white;
     text-decoration: none;
@@ -189,7 +191,6 @@ footer .copyright {
 }
 
 .portada span:nth-child(2) {
-    z-index: 100;
     color: #f7f4f4;
 }
 
@@ -301,6 +302,86 @@ footer .copyright {
     margin: auto;
 }
 
+[class^="tableImageItem-"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+.tableImage {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+}
+
+.tableImageItem-1:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableImageItem-1:nth-child(2) {
+    background-image: url(../image/bodas.jpg);
+    background-size: cover;
+    background-position-x: -450px;
+    margin-right: 2px;
+}
+
+.tableImageItem-2:nth-child(2) {
+    height: 100%;
+    display: flex;
+}
+
+.tableImageItem-2:nth-child(1) {
+    background-image: url(../image/img1.jpg);
+    background-size: contain;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: -2px;
+}
+
+.tableImageItem-3 {
+    height: 100%;
+}
+
+.tableImageItem-3:nth-child(1) {
+    background-image: url(../image/15anos2.jpg);
+    background-size: cover;
+    margin-left: -0.5px;
+}
+
+.tableImageItem-3:nth-child(2) {
+    background-image: url(../image/bautizo2.jpg);
+    background-size: cover;
+    margin-right: -0.5px;
+}
+
+.tableImage2 {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+}
+
+.tableImageItem2:nth-child(1) {
+    width: 45%;
+    background-image: url(../image/img2.jpg);
+    background-size: cover;
+}
+
+.tableImageItem2:nth-child(2) {
+    width: 33%;
+    background-image: url(../image/img7.jpg);
+    background-size: cover;
+}
+
+.tableImageItem2:nth-child(3) {
+    width: 20%;
+    background-image: url(../image/bautizo.jpg);
+    background-size: cover;
+    background-position-x: -90px;
+}
+
 .imageAside {
     width: 100%;
     height: 150%;
@@ -330,7 +411,12 @@ footer .copyright {
 
 .textMedio2 {
     text-align: center;
-    font-size: 2.0em;
+    font-size: 1.35em;
+    /*text-shadow: -2px 7px 10px #b0b7bd;*/
+}
+
+.textMedio2 p {
+    margin: 0 100px 0 100px;
     /*text-shadow: -2px 7px 10px #b0b7bd;*/
 }
 
@@ -364,15 +450,11 @@ footer .copyright {
 .articulo {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .textArticulo {
-    justify-content: center;
-}
-
-.articuloEvento div {
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
 .articuloEvento {
@@ -380,7 +462,11 @@ footer .copyright {
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.articuloEvento div {
+    padding: 5px;
 }
 
 .imageItem2 {
@@ -402,4 +488,80 @@ footer .copyright {
     display: block;
     transition: 3s;
     opacity: 0.5;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service .serviceItem {
+    color: white !important;
+    background-color: #FFC471;
+    /*background-color: #FFD2D3;*/
+    margin: 10px;
+    border: 2px solid #FFAD3B;
+    width: 100%;
+    height: 230px;
+    text-align: center;
+}
+
+.service .serviceItem h2 {
+    margin-top: -10px;
+    color: white !important;
+}
+
+.serviceItem .fa {
+    margin-top: 10px;
+}
+
+.serviceItem .fa:hover {
+    color: #FE7174;
+}
+
+.form {
+    margin-top: 20px !important;
+    color: #FE7174;
+    margin: 0 auto;
+    width: 100%;
+    /*background-color: #FE7174;*/
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.1em;
+    /*border: 2px solid #FE7174;*/
+    padding: 3px;
+}
+
+.form legend {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form input,
+textarea {
+    width: 100%!important;
+    font-family: cursive;
+    color: gray;
+}
+
+.form input[type="submit"] {
+    background-color: #FE7174;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.contenedor .serviceItem {
+    color: gray !important;
+    background-color: white;
+    border: none;
+    /*2px solid #FE7174*/
+}
+
+.contenedor .serviceItem h2 {
+    color: gray !important;
 }
