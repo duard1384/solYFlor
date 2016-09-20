@@ -35,20 +35,16 @@ function changeImg(namePag) {
             break;
         default:
             imageMedio.style.backgroundColor = "red";
-
     }
 }
 
 function changePathName() {
-    url =location.pathname;
-
+    url = location.pathname;
     namePage = url.substring((url.lastIndexOf('/') + 1), (url.length - 5));
-    alert(namePage);
     changeImg(namePage);
 }
 
 function eventos() {
-
     if (document.readyState = "complete ") {
         addEventListener('load', typeLetter);
         addEventListener("load", changePathName);
