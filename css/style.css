@@ -578,6 +578,15 @@
         .contenedor .serviceItem h2 {
             color: gray !important;
         }
+        
+        .serviceItem:nth-child(2) {
+            height: auto;
+        }
+        
+        iframe {
+            height:350px;
+            
+        }
         /*Media query*/
         /* Small devices (tablets, 768px and up) */
         
@@ -615,7 +624,6 @@
             iframe {
                 width: 100% !important;
                 height: 500px;
-                ;
             }
         }
         /*body {
