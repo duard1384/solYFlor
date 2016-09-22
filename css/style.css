@@ -680,8 +680,8 @@
                 }
                 .menu li {
                     display: block;
-                    margin: 20px;
-                    padding: 20px;
+                    margin: 15px;
+                    padding: 15px;
                 }
                 .menu li:nth-child(2) {
                     display: none;
@@ -700,6 +700,10 @@
                     text-indent: 0;
                 }
                 .contenedor {
+                    width: 100%;
+                }
+                .contenedor div img {
+                    display: none;
                     width: 100%;
                 }
                 .titulo {
@@ -721,15 +725,15 @@
                     text-align: center;
                     margin: auto;
                 }
+                .backgroundMedio {
+                    height: auto;
+                    background-attachment: initial;
+                }
                 .textMedio {
                     margin: 0;
                     font-size: 2.5em;
                     width: 100%;
                     margin-top: 100px;
-                }
-                .contenedor div img {
-                    display: none;
-                    width: 100%;
                 }
             }
             /*body {
