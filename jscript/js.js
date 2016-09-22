@@ -20,6 +20,7 @@ function changeImg(namePag) {
     switch (namePag) {
         case "index":
             imageMedio.style.backgroundImage = 'url(image/img2.jpg)';
+            document.getElementById("portadaDiv").style.fontSize = "6.0em";
             break;
         case "finca":
             imageMedio.style.backgroundImage = 'url(image/img3.jpg)';
@@ -33,13 +34,16 @@ function changeImg(namePag) {
         case "contacto":
             document.getElementById("portada").style.backgroundImage = "url(image/img7.jpg)";
             document.getElementById("portada").style.height = "250px";
-            document.getElementById("portadaDiv").style.fontSize = "3.0em";
             document.getElementById("portadaDiv").style.width = "auto";
             document.getElementById("portadaDiv").style.marginTop = "50px";
             document.getElementById("portadaDiv").style.marginLeft = "auto";
             document.getElementById("portadaDiv").style.textAlign = "center";
             document.getElementsByClassName("serviceItem")[0].style.height = "550px";
             document.getElementsByClassName("serviceItem")[1].style.height = "550px";
+            if (window.innerWidth < 800) {
+                document.getElementById("portadaDiv").style.fontSize = "2.0em";
+            } else
+                document.getElementById("portadaDiv").style.fontSize = "3.0em";
             break;
         default:
             imageMedio.style.backgroundColor = "red";
