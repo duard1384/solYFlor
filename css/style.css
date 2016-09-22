@@ -671,8 +671,8 @@
                 .menu {
                     text-align: center;
                     background-color: none;
-                    background-image: url(../image/img7.jpg);
-                    background-position: -190px -100px;
+                    background-image: url(../image/img3.jpg);
+                    background-size: cover;
                 }
                 .menu ol {
                     display: block;
@@ -680,6 +680,8 @@
                 }
                 .menu li {
                     display: block;
+                    margin: 20px;
+                    padding: 20px;
                 }
                 .menu li:nth-child(2) {
                     display: none;
@@ -700,16 +702,34 @@
                 .contenedor {
                     width: 100%;
                 }
+                .titulo {
+                    margin: 0;
+                    margin-bottom: -50px;
+                }
+                .table {
+                    display: block;
+                    text-align: center;
+                    margin: 0;
+                }
                 .table .item:nth-child(3) {
                     display: none;
+                }
+                .table .item img {
+                    display: block;
+                }
+                .imageAside {
+                    text-align: center;
+                    margin: auto;
                 }
                 .textMedio {
                     margin: 0;
                     font-size: 2.5em;
+                    width: 100%;
+                    margin-top: 100px;
                 }
-                .textMedio {
-                    width: 195px;
-                    ;
+                .contenedor div img {
+                    display: none;
+                    width: 100%;
                 }
             }
             /*body {
