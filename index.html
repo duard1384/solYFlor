@@ -30,7 +30,8 @@
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         </div>
-        <div class="menu">
+        <span class="buttonDes icon-menu" id="buttonDes"></span>
+        <div class="menu" id="menu">
             <ol>
                 <li class="displayMenu">
                     <a href="index.html">    Inicio
@@ -132,9 +133,17 @@
             Duard Designer Web <i class="fa fa-copyright fa-1x" aria-hidden="true"></i> 2016. Todos los derechos reservados
         </div>
     </footer>
-    <script src="js/prueba.js">
-        // document.getElementById("demo").innerHTML = "My First Page";
-    </script>
+    <!--<script>
+        var $burguerButton = document.getElementById('buttonDes');
+        var $menu = document.getElementById('menu');
+
+        function toggleMenu() {
+            $menu.classList.toggle('active')
+        };
+        if ($burguerButton) {
+            $burguerButton.addEventListener('touchstart', toggleMenu);
+        };
+    </script>-->
 </body>
 
 </html>
