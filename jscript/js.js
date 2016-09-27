@@ -9,6 +9,35 @@ var menu;
 
 var menu = document.getElementById("menu");
 
+var bLazy = new Blazy({
+    selector: "img"
+});
+
+function gestosMenu() {
+    var body = document.body;
+    var gestos = new Hammer(body);
+
+    gestos.on('swipeleft', function(ev) {
+        if (document.getElementById("menu").classList.contains("active")) {
+            document.getElementById("buttonDes").style.color = "white";
+            document.getElementById("buttonDes").style.backgroundColor = "#FE7174";
+            document.getElementById("menu").classList.toggle("active");
+        }
+
+    });
+    gestos.on('swiperight', function(ev) {
+        if (!document.getElementById("menu").classList.contains("active")) {
+            document.getElementById("buttonDes").style.color = "#FE7174";
+            document.getElementById("buttonDes").style.backgroundColor = "white";
+            document.getElementById("menu").classList.toggle("active");
+        }
+    });
+}
+
+function menuStyle() {
+
+}
+
 function menuDesplegable() {
     menu = document.getElementById("menu");
     menu.classList.toggle("active");
@@ -16,12 +45,11 @@ function menuDesplegable() {
     if (menu.classList.contains("active") == true) {
         document.getElementById("buttonDes").style.color = "#FE7174";
         document.getElementById("buttonDes").style.backgroundColor = "white";
-    } else{
+    } else {
         document.getElementById("buttonDes").style.color = "white";
-    document.getElementById("buttonDes").style.backgroundColor = "#FE7174";
+        document.getElementById("buttonDes").style.backgroundColor = "#FE7174";
     }
 }
-
 
 function changeImg(namePag) {
     imageMedio = document.getElementById("changeImg");
@@ -55,10 +83,12 @@ function changePathName() {
 }
 
 function eventos() {
+
     var buttonDes = document.getElementById("buttonDes");
     if (document.readyState = "interactive ") {
         addEventListener("load", changePathName);
         buttonDes.addEventListener('touchstart', menuDesplegable);
+        document.addEventListener("DOMContentLoaded", gestosMenu);
     }
 }
 document.addEventListener('readystatechange', eventos);

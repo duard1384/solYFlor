@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
-    <script src="https://use.fontawesome.com/493ef35f7a.js"></script>
-    <script src="jscript/js.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script>
+    <script type="text/javascript" src="jscript/bLazy.1.6.2.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script type="text/javascript" src="jscript/js.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -28,9 +30,10 @@
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         </div>
-           <span class="buttonDes icon-menu" id="buttonDes"></span>
+        <span class="buttonDes icon-menu" id="buttonDes"></span>
         <div class="menu" id="menu">
-            <ol><li class="displayMenu">    <a href="index.html">    Inicio
+            <ol>
+                <li class="displayMenu"> <a href="index.html">    Inicio
                 </a>
                 </li>
                 <li>
@@ -49,21 +52,21 @@
     </nav>
     <section class="contenedor">
         <div class="titulo2 .color-secondary-2-2">
-            <img src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
+            <img data-src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
             <h2>Finca</h2>
-            <img src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
+            <img data-src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
         </div>
         <article>
             <div class="articulo">
                 <div class="tableImage">
                     <div class="tableImageItem-1">
-                        <div class="tableImageItem-2"></div>
+                        <div class="tableImageItem-2 b-lazy" data-src="../image/img1.jpg"></div>
                         <div class="tableImageItem-2">
-                            <div class="tableImageItem-3"></div>
-                            <div class="tableImageItem-3"></div>
+                            <div class="tableImageItem-3 b-lazy" data-src="../image/bautizo2.jpg"></div>
+                            <div class="tableImageItem-3 b-lazy" data-src="../image/15anos2.jpg"></div>
                         </div>
                     </div>
-                    <div class="tableImageItem-1"></div>
+                    <div class="tableImageItem-1 b-lazy" data-src="../image/bodas.jpg"></div>
                 </div>
             </div>
             <div class="lineDiv" style="margin-top: 20px"></div>
@@ -76,9 +79,9 @@
         <article>
             <div class="articulo">
                 <div class="tableImage2">
-                    <div class="tableImageItem2"></div>
-                    <div class="tableImageItem2"></div>
-                    <div class="tableImageItem2"></div>
+                    <div class="tableImageItem2 "></div>
+                    <div class="tableImageItem2 "></div>
+                    <div class="tableImageItem2 "></div>
                 </div>
             </div>
 
@@ -90,7 +93,7 @@
         <div class="lineDiv" style="margin-bottom: 20px"></div>
     </section>
     <section class="imageAside">
-        <div id="changeImg" class="backgroundMedio">
+        <div id="changeImg" class="backgroundMedio ">
             <div class="textMedio">
                 <p> Encontras el espacio perfecto para tu dia Ideal</p>
             </div>

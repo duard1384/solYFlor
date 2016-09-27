@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
-    <script src="https://use.fontawesome.com/493ef35f7a.js"></script>
-    <script src="jscript/js.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script>
+    <script type="text/javascript" src="jscript/bLazy.1.6.2.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script type="text/javascript" src="jscript/js.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -30,7 +32,7 @@
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         </div>
-           <span class="buttonDes icon-menu" id="buttonDes"></span>
+        <span class="buttonDes icon-menu" id="buttonDes"></span>
         <div class="menu" id="menu">
             <ol>
                 <li class="displayMenu"> <a href="index.html">    Inicio
@@ -52,9 +54,9 @@
     </nav>
     <section class="contenedor">
         <div class="titulo2">
-            <img src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
+            <img data-src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
             <h2>Servicios</h2>
-            <img src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
+            <img data-src="recurso/margarita.jpg" width="50" height="30" alt="" class="imageTitulo2">
         </div>
 
         <article>
@@ -71,7 +73,8 @@
                 </div>
             </div>
             <div class="service">
-                <div class="serviceItem"> <i class="fa fa-sign-language fa-3x" aria-hidden="true"></i>
+                <div class="serviceItem">
+                    <i class="fa fa-sign-language fa-3x" aria-hidden="true"></i>
                     <h2>Espectaculos</h2>
 
                     <p>Encontras el espacio perfecto para tu dia Ideal</p>

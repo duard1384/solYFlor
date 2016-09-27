@@ -1,0 +1,30 @@
+
+
+---------terminar de pulir--------------
+index 
+    incluir linea roja debajo de titulo SOLYFLOR
+    eliminar linea roja de titulo SOLYFLOR
+finca
+    nada
+eventos
+    añadir titulos a eventos bodas, 15 años y bautizos
+    personalizar un poco
+servicios
+    añadir linea roja debajo de titulo SERVICIOS
+contacto
+    cambiar el sentido del mapa COLUMN al final 2:1
+    elaborar conexion para formulario
+    mapa pesonalizada
+condiciones
+    buscar material para terminarlo
+politica
+    buscar material para terminarlo
+
+    
+ -------------resposive--------
+
+    servicios
+       añadir imagen debajo de SERVICIOS (se ve vacio)
+    menu off-canvas
+        corregir para ser fixed y despazarlo por todo la pagina
+        
