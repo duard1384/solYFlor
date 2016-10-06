@@ -15,6 +15,9 @@ var bLazy = new Blazy({
 
 function gestosMenu() {
     var body = document.body;
+
+ /*plugin HammerJs para gestos de dedo*/
+
     var gestos = new Hammer(body);
 
     gestos.on('swipeleft', function(ev) {
@@ -32,10 +35,6 @@ function gestosMenu() {
             document.getElementById("menu").classList.toggle("active");
         }
     });
-}
-
-function menuStyle() {
-
 }
 
 function menuDesplegable() {
@@ -75,6 +74,7 @@ function changeImg(namePag) {
             break;
     }
 }
+/*funcion para sacar el nombre de la pagina*/
 
 function changePathName() {
     url = location.pathname;

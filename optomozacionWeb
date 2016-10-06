@@ -2,6 +2,14 @@
 
 -----optiizamos la web------
 1.- comprobamos nuestra web en https://developers.google.com/speed/pagespeed/insights/
-        anotamos defecto y errores
+        -anotamos defecto y errores
         
-2.-https://tinypng.com/
+2.- optimizamos las imagenes(.png y .jpg) en https://tinypng.com/ hacemos el proceso 2 o 3 veces
+        -comprobamos punto 1
+3.- llevar todos los script al final de la pagina
+3.- aplicar criticalCss en la bodydefault: en el head tener estiqueta <styl> estilos
+ y el link del estilo al final
+        3.1.-en https://jonassebastianohlsson.com/criticalpathcssgenerator/
+        se genera el <style> del head
+        3.2.-en http://csscompressor.com/ minificar el <style> en una sola linea
+4.- nuestras fuentes tienen que cargar de forma asincrona para eso ir google.font
