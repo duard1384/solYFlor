@@ -193,7 +193,7 @@
                     background-size: cover;
                     width: 100%;
                     display: inline-block;
-                    height: 200px;
+                    height: 400px;
                 }
                 
                 .portada span:nth-child(2) {
@@ -522,14 +522,16 @@
                     color: white !important;
                 }
                 
-                .serviceItem .fa {
+                .serviceItem .fa,
+                .serviceItemMap .fa {
                     border-radius: 50%;
                     border: 2px solid #FE7174;
                     margin-bottom: 10px;
                     padding: 30px;
                 }
                 
-                .serviceItem .fa:hover {
+                .serviceItem .fa:hover,
+                .serviceItemMap .fa:hover {
                     color: #FE7174;
                 }
                 
@@ -539,6 +541,11 @@
                     border: 2px solid #FE7174;
                     width: 280px;
                     height: 280px;
+                }
+                
+                #service .serviceItem {
+                    display: flex;
+                    justify-content: space-around;
                 }
                 
                 .form {
@@ -580,7 +587,14 @@
                     border: none;
                 }
                 
-                .contenedor .serviceItem h2 {
+                .serviceItemMap {
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                
+                .contenedor .serviceItem h2,
+                .contenedor .serviceItemMap h2 {
                     color: gray !important;
                 }
                 
@@ -692,8 +706,8 @@
                         text-align: center;
                         cursor: pointer;
                         position: fixed;
-                        left: 7px;
-                        top: 7px;
+                        left: 10px;
+                        top: 26px;
                         z-index: 100;
                     }
                     .menu .displayMenu {

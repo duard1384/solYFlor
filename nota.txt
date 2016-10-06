@@ -28,3 +28,27 @@ politica
     menu off-canvas
         corregir para ser fixed y despazarlo por todo la pagina
         
+--------------launch.json que se configuro-----------------
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/index.html",
+            "userDataDir": "${workspaceRoot}/out/chrome",
+            "runtimeExecutable": "C://Program Files (x86)/Google/Chrome/Application/chrome.exe",
+            // "url": "http://localhost:9615/index.html",
+            "sourceMaps": true
+                //  "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}
