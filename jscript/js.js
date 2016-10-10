@@ -16,7 +16,7 @@ var bLazy = new Blazy({
 function gestosMenu() {
     var body = document.body;
 
- /*plugin HammerJs para gestos de dedo*/
+    /*plugin HammerJs para gestos de dedo*/
 
     var gestos = new Hammer(body);
 
@@ -85,7 +85,7 @@ function changePathName() {
 function eventos() {
 
     var buttonDes = document.getElementById("buttonDes");
-    if (document.readyState = "interactive ") {
+    if (document.readyState = "complete ") {
         addEventListener("load", changePathName);
         buttonDes.addEventListener('touchstart', menuDesplegable);
         document.addEventListener("DOMContentLoaded", gestosMenu);
