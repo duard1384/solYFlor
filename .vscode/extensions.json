@@ -1,0 +1,25 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+		"abusaidm.html-snippets",
+		"akamud.vscode-caniuse",
+		"bajdzis.vscode-refresh-html",
+		"dbaeumer.vscode-eslint",
+		"dkundel.vscode-npm-source",
+		"ecmel.vscode-html-css",
+		"felixfbecker.php-debug",
+		"HvyIndustries.crane",
+		"lonefy.vscode-JS-CSS-HTM",
+		"miramac.vscode-exec-node",
+		"mitchdenny.ecdc",
+		"msjsdiag.debugger-for-chrom",
+		"qinjia.view-in-browser",
+		"Zignd.html-css-clas",
+		"roblourens.searchdocs",
+		"Kasik96.format-indent",
+		"ms-vscode.Theme-MarkdownKi",
+		"xabikos.JavaScriptSnippets"
+	]
+}
