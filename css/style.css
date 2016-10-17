@@ -1,73 +1,11 @@
-.color-primary-0 {
-    color: #FFA82E
-}
-
-.color-primary-1 {
-    color: #FFECD2
-}
-
-.color-primary-2 {
-    color: #FFC471
-}
-
-.color-primary-3 {
-    color: #FF9500
-}
-
-.color-primary-4 {
-    color: #FA9200
-}
-
-.color-secondary-1-0 {
-    color: #FFE12E
-}
-
-.color-secondary-1-1 {
-    color: #FFF8D2
-}
-
-.color-secondary-1-2 {
-    color: #FFEA71
-}
-
-.color-secondary-1-3 {
-    color: #FFDA00
-}
-
-.color-secondary-1-4 {
-    color: #FAD600
-}
-
-.color-secondary-2-0 {
-    color: #FE2E33
-}
-
-.color-secondary-2-1 {
-    color: #FFD2D3
-}
-
-.color-secondary-2-2 {
-    color: #FE7174!important
-}
-
-.color-secondary-2-3 {
-    color: #FE0007
-}
-
-.color-secondary-2-4 {
-    color: #F80006
-}
-
-* {
+<!DOCTYPE html><html lang="es"><head><title>Sol y Flor</title><meta charset="UTF-8"><meta http-equiv="x-ua-compatible" content="ies=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><link rel="icon" type="image/png" sizes="16x16" href="image/icon/favicon.ico"><style>* {
     box-sizing: border-box
 }
 
 html,
 body,
 nav,
-header,
-ol,
-footer {
+ol {
     padding: 0;
     margin: 0;
     width: 100%
@@ -81,40 +19,9 @@ body {
     min-height: 100vh
 }
 
-footer {
-    color: #fff;
-    background-color: #FF9500!important;
-    align-self: flex-end;
-    border-top: 2px solid #FF9500;
-    font-family: 'Kaushan Script', cursive
-}
-
-h1,
 h2 {
     color: #FE7174;
     font-family: 'Kaushan Script', cursive
-}
-
-.condiciones a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px
-}
-
-.condiciones a:hover {
-    color: #FFC471
-}
-
-.condiciones a:nth-child(1):after {
-    margin-left: 15px;
-    content: "|"
-}
-
-footer .copyright {
-    margin-top: -10px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 1.2em
 }
 
 .logoTitle {
@@ -149,11 +56,236 @@ footer .copyright {
     color: #FF9500
 }
 
-.social .fa:hover {
-    color: #FFC471
+.menu .displayMenu {
+    display: none
 }
 
-.portada {
+.menu {
+    background-color: #FFC471
+}
+
+.menu ol {
+    display: flex;
+    justify-content: space-around
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.8em
+}
+
+.menu li:nth-child(2) {
+    background-color: #FF9500;
+    padding: 5px 20px
+}
+
+.menu li a {
+    color: #fff!important;
+    text-decoration: none
+}
+
+.menu li a div {
+    font-family: 'Kaushan Script', cursive;
+    line-height: .45
+}
+
+.menu li a div:nth-child(1) {
+    padding-top: 4.5px
+}
+
+.menu li a div:nth-child(2) {
+    text-indent: 40px;
+    font-size: .8em
+}
+
+.menu li a div:nth-child(3) {
+    text-indent: 55px
+}
+
+.contenedor {
+    color: grey;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.3em
+}
+
+.contenedor div img {
+    margin: auto
+}
+
+[class^="tableImageItem-"] {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position-x: center!important;
+    background-position-y: center!important;
+    margin: 3px
+}
+
+.tableImage {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%
+}
+
+.tableImageItem-1:nth-child(1) {
+    display: flex;
+    flex-direction: column
+}
+
+.tableImageItem-2:nth-child(1) {
+    background-image: url(../image/img1.jpg);
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: -2px
+}
+
+.titulo2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.titulo2 h2 {
+    margin-left: 5px;
+    letter-spacing: 9px
+}
+
+.articulo {
+    display: flex;
+    justify-content: center;
+    height: auto
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        width: 700px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social {
+        display: flex;
+        flex-direction: column;
+        top: 150px;
+        left: 0;
+        position: fixed;
+        margin-top: 0;
+        margin-right: 0;
+        width: 32px
+    }
+    .buttonDes {
+        color: #fff;
+        width: 45px;
+        border-radius: 50%;
+        line-height: 40px;
+        height: 45px;
+        background-color: #FE7174;
+        display: inline-block;
+        text-align: center;
+        position: fixed;
+        left: 10px;
+        top: 26px;
+        z-index: 100
+    }
+    .menu .displayMenu {
+        display: block
+    }
+    .menu {
+        background: rgba(255, 60, 60, .8);
+        text-align: center;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center
+    }
+    .menu ol {
+        flex: 1;
+        display: block
+    }
+    .icon-menu:before {
+        content: "Menu"
+    }
+    .menu li {
+        display: block;
+        margin: 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #fff
+    }
+    .menu li:before {
+        display: none
+    }
+    .menu li:nth-child(2) {
+        display: none
+    }
+    .menu li a div:nth-child(1) {
+        display: none;
+        padding-top: 0
+    }
+    .menu li a div:nth-child(2) {
+        display: none;
+        text-indent: 0;
+        font-size: 0
+    }
+    .menu li a div:nth-child(3) {
+        display: none;
+        text-indent: 0
+    }
+    .contenedor {
+        width: 100%
+    }
+    [class^="tableImageItem-"] {
+        margin: 0!important
+    }
+    .tableImage {
+        flex-direction: column;
+        height: auto
+    }
+    .tableImageItem-1 {
+        background-position-x: center!important;
+        background-position-y: center!important
+    }
+    .tableImageItem-1:nth-child(1) {
+        height: 600px
+    }
+    .tableImageItem-2 {
+        height: 400px
+    }
+}
+
+</style><!--<script>var $burguerButton=document.getElementById('buttonDes');
+var $menu=document.getElementById('menu');
+function toggleMenu() {
+    $menu.classList.toggle('active')
+}
+
+;
+if ($burguerButton) {
+    $burguerButton.addEventListener('touchstart', toggleMenu);
+}
+
+;
+</script>--></head><body><nav class="position"><div class="logoTitle"><div>Sol</div><div>&amp;
+</div><div>Flor</div></div><div class="social"><a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a><a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a><a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a><a href="https://www.facebook.com/SOL-FLOR-1453442584971368/?fref=ts" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div><span class="buttonDes icon-menu" id="buttonDes"></span><div class="menu" id="menu"><ol><li class="displayMenu"><a href="index.html">Inicio </a></li><li><a href="index.html"><div>Sol</div><div>&amp;
+</div><div>Flor</div></a></li><li><a href="finca.html">Finca</a></li><li><a href="eventos.html">Eventos</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ol></div></nav><header><div class="portada"><div><p class="portadaDiv"><span class="textSpan">Salon de Eventos</span><span>Sol &amp;
+Flor</span><span class="textSpan">Ciudad de las Flores - Tiquipaya</span></p></div></div></header><section class="contenedor"><div class="titulo"><div class="lineDiv"></div><img class="b-lazy" data-src="image/imageIzquierdo_opt.jpg" width="230" height="140" alt=""><h1>Sol &amp;
+Flor</h1><img class="b-lazy" data-src="image/imageDerecho_opt.jpg" width="250" height="140" alt=""><div class="lineDiv"></div></div><div class="fondo"><div><p>Lorem ipsum dolor sit amet,
+consectetur adipisicing elit. Inventore necessitatibus cupiditate ipsa quasi delectus quam quidem reprehenderit laboriosam iusto? Fuga aspernatur aliquid suscipit vero obcaecati eveniet similique aperiam dolorum,
+soluta,
+quia accusamus odio ratione animi vitae commodi repellat alias reprehenderit. Ipsum vitae quas esse deleniti cupiditate,
+commodi nesciunt,
+eligendi iusto!</p></div><div><p>Lorem ipsum dolor sit amet,
+consectetur adipisicing elit. Earum voluptatibus dolore veritatis nesciunt culpa. Amet officia blanditiis tempora voluptas in accusantium nobis placeat dolor,
+asperiores excepturi dignissimos delectus iusto eveniet suscipit enim recusandae minima laudantium itaque,
+sit sequi? Molestias error consequuntur quisquam ab illum? Sint nostrum repellat aperiam culpa. Fugit. </p></div></div><div class="lineDiv" style="margin-bottom: 20px;"></div></section><section class="imageAside"><div id="changeImg" class="backgroundMedio"><div class="textMedio"><p>Un sitio ideal para todos<br>los seres queridos </p></div></div></section><section class="contenedor"><div class="textMedio2"><p><h2>Cerca de la naturaleza estaras viviendo algo inolvidable que lo contaras todos los dias</h2></p></div><div class="table"><div class="item"><img class="imageItem" src="image/img7_opt.jpg" width="300" height="250" alt="" /><hr><p>Todo inolvidable</p></div><div class="item"><img class="imageItem" src="image/img6_opt.jpg" width="300" height="250" alt=""><hr><p>Todo inolvidable</p></div><div class="item"><img class="imageItem" src="image/img5_opt.jpg" width="300" height="250" alt=""><hr><p>Todo inolvidable</p></div></div><div class="table"><div class="item"><img class="imageItem" src="image/img4_opt.jpg" width="300" height="250" alt=""><hr><p>Todo inolvidable</p></div><div class="item"><img class="imageItem" src="image/img3_opt.jpg" width="300" height="250" alt=""><hr><p>Todo inolvidable</p></div><div class="item"><img class="imageItem" src="image/img2_opt.jpg" width="300" height="250" alt=""><hr><p>Todo inolvidable</p></div></div></section><footer><div class="condiciones"><a href="condiciones.html">Condiciones Generales</a><a href="politica.html">Politica de privacidad</a></div><div class="copyright">Duard Designer Web <i class="fa fa-copyright fa-1x" aria-hidden="true"></i>2016. Todos los derechos reservados </div></footer><script async type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script><script async type="text/javascript" src="jscript/bLazy.1.6.2.js"></script><script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script><script async type="text/javascript" src="jscript/js.js"></script><script async type="text/javascript" src="jscript/prefixfree.min.js"></script><script async type="text/javascript" src="jscript/modernizr-custom.js"></script><link rel="stylesheet" href="css/normalize.css"><link href="css/style.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"></body></html>a {
     background-image: url(../image/img4.jpg);
     background-size: cover;
     width: 100%;

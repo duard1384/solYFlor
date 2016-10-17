@@ -10,7 +10,7 @@ var menu;
 var menu = document.getElementById("menu");
 
 var bLazy = new Blazy({
-    selector: "img"
+    selector: 'img'
 });
 
 function gestosMenu() {
