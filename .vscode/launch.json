@@ -6,7 +6,7 @@
             "request": "launch",
             "file": "${workspaceRoot}/index.html",
             "userDataDir": "${workspaceRoot}/out/chrome",
-            "runtimeExecutable": "C://Program Files (x86)/Google/Chrome/Application/chrome.exe",
+            "runtimeExecutable": "../Applications/Google chrome.app",
             // "url": "http://localhost:9615/index.html",
             "sourceMaps": true
             //  "webRoot": "${workspaceRoot}"

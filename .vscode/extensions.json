@@ -20,6 +20,8 @@
 		"roblourens.searchdocs",
 		"Kasik96.format-indent",
 		"ms-vscode.Theme-MarkdownKi",
-		"xabikos.JavaScriptSnippets"
+		"xabikos.JavaScriptSnippets",
+		"felixfbecker.php-intellisense",
+		"christian-kohler.path-intellisense"
 	]
 }
