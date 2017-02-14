@@ -131,6 +131,7 @@
             </div>
         </div>
     </section>
+    <div id="messasge">mensaje</div>
     <footer>
         <div class="condiciones">
             <a href="condiciones.html">Condiciones Generales</a>
@@ -141,8 +142,9 @@
         </div>
     </footer>
     <script type="text/javascript">
-        function showAndroidDialog(message) {
-        Android.showDialog(message); }
+        var div=document.getElementById("message")
+        div.addEventListener("click", function showAndroidDialog(message) {
+        Android.showDialog(message)});
     </script>
     
     <script async  type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script>
