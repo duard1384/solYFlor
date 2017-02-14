@@ -100,6 +100,7 @@
         <div class="textMedio2">
             <p>
                 <h2>Cerca de la naturaleza estaras viviendo algo inolvidable que lo contaras todos los dias</h2>
+            <input type="button" value="dame click!" onclick="showAndroidDialog()"/>
             <div id="message">mensaje</div>
             </p>
         </div>
@@ -143,9 +144,9 @@
         </div>
     </footer>
     <script type="text/javascript">
-        var div=document.getElementById("message")
-        div.addEventListener("click", function showAndroidDialog(message) {
-        Android.showDialog(message)});
+        function showAndroidDialog(message) {
+        Android.showDialog(message);
+        }
     </script>
     
     <script async  type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script>
