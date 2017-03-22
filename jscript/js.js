@@ -57,9 +57,11 @@ function changeImg(namePag) {
     serviceItem = document.getElementsByClassName("serviceItem");
 
     switch (namePag) {
+        case "":
+            imageMedio.style.backgroundImage = 'url(image/img2.jpg)';
+            break;
         case "index":
             imageMedio.style.backgroundImage = 'url(image/img2.jpg)';
-
             break;
         case "finca":
             imageMedio.style.backgroundImage = 'url(image/img3.jpg)';
